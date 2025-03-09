@@ -1,5 +1,8 @@
 import streamlit as st
 st.title("Confiteria Dulcino")
+
+st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemm257R8iW4sozOQTUqnVsZiftDcrVqjOyg&s", width=200) 
+
 st.title("Formulario")
 
 # Solicitar el nombre del producto
