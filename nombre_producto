@@ -6,8 +6,8 @@ def validar_nombre_producto(nombre):
         return False
 
 # Ejemplo de uso
-producto = input("Ingrese el nombre del producto: ")
-if validar_nombre_producto(producto):
-    print("Nombre válido.")
-else:
-    print("El nombre del producto es demasiado largo.")
+#producto = input("Ingrese el nombre del producto: ")
+#if validar_nombre_producto(producto):
+ #   print("Nombre válido.")
+#else:
+  #  print("El nombre del producto es demasiado largo.")
