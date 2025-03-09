@@ -27,8 +27,6 @@ categorias = ["Chocolates", "Caramelos", "Mashmelos", "Galletas", "Salados","Gom
 # Mostrar las categorías para que el usuario seleccione
 categoria_seleccionada = st.selectbox("Selecciona una categoría", categorias)
 
-# Mostrar el array de categorías seleccionadas
-st.write("Categorías seleccionadas hasta ahora:")
-st.write(st.session_state.categorias_seleccionadas)
+
 
 
