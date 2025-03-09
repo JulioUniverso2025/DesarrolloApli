@@ -31,7 +31,7 @@ categoria_seleccionada = st.selectbox("Selecciona una categoría", categorias)
 estado_venta = st.radio("¿El producto está en venta?", ("Sí", "No"))
 
 #Validacion del producto
-if len(nombre)< 20: and  0<= precio<= 999:
+if len(nombre)< 20 and  0<= precio<= 999:
     st.success (f"Felicidades se agrego el producto")
 else:
     st.error("Lo sentimos no se puede crear este producto")
