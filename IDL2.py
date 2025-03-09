@@ -27,6 +27,7 @@ categorias = ["Chocolates", "Caramelos", "Mashmelos", "Galletas", "Salados","Gom
 # Mostrar las categorías para que el usuario seleccione
 categoria_seleccionada = st.selectbox("Selecciona una categoría", categorias)
 
-
+# Radio button para definir si el producto está en venta o no
+estado_venta = st.radio("¿El producto está en venta?", ("Sí", "No"))
 
 
