@@ -6,10 +6,11 @@ st.title("Formulario")
 nombre=st.text_input("Ingrese el nombre del producto: ")
 
 #Validar nombre de producto
-if len(nombre) < 20:
-   st.success (f"El Nombre es valido")
-else:
-   st.error("El nombre del producto es demasiado largo")
+if nombre:
+   if len(nombre) < 20:
+       st.success (f"El Nombre es valido")
+   else:
+      st.error("El nombre del producto es demasiado largo")
 
 #Ingrese el precio del producto
 precio=st.text_input("Precio del producto:")
