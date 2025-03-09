@@ -13,9 +13,9 @@ def validar_nombre_producto(nombre):
 # Solicitar el nombre del producto
 nombre = st.text_input("Ingrese el nombre del producto: ")
 if validar_nombre_producto(nombre):
-    print("Nombre válido.")
+    print("Nombre válido")
 else:
-    print("El nombre del producto es demasiado largo.")
+    print("El nombre del producto es demasiado largo")
 
 
 
