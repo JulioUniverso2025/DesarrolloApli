@@ -15,7 +15,7 @@ if nombre:
 #Ingrese el precio del producto
 precio=st.number_input("Precio del producto:")
 if precio: 
-    if 0 <= float(precio)<= 99:
+    if 0 <= float(precio)<= 999:
         st.success(f"El precio ingresado es válido: S/.{precio}")
     else:
         st.error("Error: El precio debe estar entre 0 y 999")
@@ -32,7 +32,7 @@ estado_venta = st.radio("¿El producto está en venta?", ("Sí", "No"))
 
 #Validacion del producto
 if len(nombre) < 20:
- elif 0 <= float(precio)<= 99:
+   if 0 <= float(precio)<= 999:
     st.success (f"Felicidades se agrego el producto")
 else:
     st.error("Lo sentimos no se puede crear este producto")
