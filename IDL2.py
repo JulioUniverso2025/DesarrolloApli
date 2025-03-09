@@ -20,6 +20,23 @@ if precio:
     else:
         st.error("Error: El precio debe estar entre 0 y 999")
               
-    
+#Categorias de productos
+ # Definir un array de categorías predefinidas
+categorias = ["Chocolates", "Caramelos", "Mashmelos", "Galletas", "Salados","Goma de Mascar"]
+
+# Mostrar las categorías para que el usuario seleccione
+categoria_seleccionada = st.selectbox("Selecciona una categoría", categorias)
+
+# Crear un array (lista) donde se agregarán las categorías seleccionadas
+if 'categorias_seleccionadas' not in st.session_state:
+    st.session_state.categorias_seleccionadas = []
+
+# Verificar si la categoría ya está en el array y agregarla si no está presente
+if categoria_seleccionada not in st.session_state.categorias_seleccionadas:
+    st.session_state.categorias_seleccionadas.append(categoria_seleccionada)
+
+# Mostrar el array de categorías seleccionadas
+st.write("Categorías seleccionadas hasta ahora:")
+st.write(st.session_state.categorias_seleccionadas)
 
 
