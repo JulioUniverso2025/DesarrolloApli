@@ -17,7 +17,8 @@ if validar_nombre_producto(nombre):
 else:
     print("El nombre del producto es demasiado largo")
 
-
+#Ingrese el precio del producto
+precio=st.tex_input("Precio del producto:")
 
 
 
