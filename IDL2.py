@@ -31,7 +31,16 @@ categoria_seleccionada = st.selectbox("Selecciona una categoría", categorias)
 estado_venta = st.radio("¿El producto está en venta?", ("Sí", "No"))
 
 #Validacion del producto
-if len(nombre)< 20 and  0< precio<= 999:
-    st.success (f"Felicidades se agrego el producto")
-else:
-    st.error("Lo sentimos no se puede crear este producto")
+
+def validar_producto(nombre, precio):
+    if len(nombre)< 20 and  0< precio<= 999:
+       st.success (f" ✅Felicidades se agrego el producto")
+    else:
+        st.error(" ❌Lo sentimos no se puede crear este producto")
+        
+if st.button("Validar Producto"):
+    resultado = validar_producto(nombre, precio)
+    st.success(resultado) 
+      if "✅" in resultado:
+      else:
+         st.error(resultado)
