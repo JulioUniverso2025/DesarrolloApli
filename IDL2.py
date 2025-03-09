@@ -39,8 +39,5 @@ def validar_producto(nombre, precio):
         st.error(" ❌Lo sentimos no se puede crear este producto")
         
 if st.button("Validar Producto"):
-    resultado = validar_producto(nombre, precio)
-    st.success(resultado) 
-      if "✅" in resultado:
-      else:
-         st.error(resultado)
+    validar_producto(nombre, precio)
+    
