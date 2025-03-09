@@ -1,4 +1,8 @@
 import streamlit as st
+
+# Título en color rojo usando HTML y CSS
+st.markdown("<h1 style='color: red;'>Mi Título en Rojo</h1>", unsafe_allow_html=True)
+
 st.title("Confiteria Dulcino")
 
 st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemm257R8iW4sozOQTUqnVsZiftDcrVqjOyg&s", width=200) 
