@@ -21,5 +21,5 @@ if st.button("Agregar Cliente"):
         data={"nombre":nombre, "email":email, "telefono":telefono}
         response=supabase.table("clientes").insert(data).execute()
         st.success("Cliente agregado correctamente")
-     else:
+    else:
         st.warning("Nombre y Email son obligatorios")
