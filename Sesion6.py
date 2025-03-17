@@ -1,12 +1,12 @@
 import streamlit as st
-from supabase import create_client, cliente
+from supabase import create_client, Client
 import os
 
 #Configurar supabase
 SUPABASE_URL = "https://wezkgzoocxwvitbraadb.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indlemtnem9vY3h3dml0YnJhYWRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIxNjE1NjcsImV4cCI6MjA1NzczNzU2N30.dDmHmNGfTckeEn3zM22rBjAOTyhSujtWrmpm2tgchbg"
 
-supabase: cliente = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 st.title("Gestion de Clientes - CRYD con Supabase y Streamlit")
 
@@ -21,5 +21,5 @@ if st.button("Agregar Cliente"):
         data={"nombre":nombre, "email":email, "telefono":telefono}
         response=supabase.table("clientes").insert(data).execute()
         st.success("Cliente agregado correctamente")
-     else:
+    else:
         st.warning("Nombre y Email son obligatorios")
