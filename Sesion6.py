@@ -1,12 +1,12 @@
 import streamlit as st
-from supabase import create_client, Client
+from supabase import create_client, cliente
 import os
 
 #Configurar supabase
 SUPABASE_URL = "https://wezkgzoocxwvitbraadb.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indlemtnem9vY3h3dml0YnJhYWRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIxNjE1NjcsImV4cCI6MjA1NzczNzU2N30.dDmHmNGfTckeEn3zM22rBjAOTyhSujtWrmpm2tgchbg"
 
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: cliente = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 st.title("Gestion de Clientes - CRYD con Supabase y Streamlit")
 
